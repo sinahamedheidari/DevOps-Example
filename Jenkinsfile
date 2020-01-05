@@ -41,9 +41,9 @@ node {
     //sh "docker stop ${dockerImageTag}"
 	  
 	  //sh "docker rm ${dockerImageTag}"
-    sh "docker stop $(docker ps |grep devopsexample|awk '{print $15}') 2>/dev/null"
+      sh "docker stop \$(docker ps |grep devopsexample|awk '{print \$15}') 2>/dev/null"
 	  
-	  sh "docker run --name ${dockerImageTag} -d -p 2222:2222 devopsexample:${env.BUILD_NUMBER}"
+	    sh "docker run --name ${dockerImageTag} -d -p 2222:2222 devopsexample:${env.BUILD_NUMBER}"
 	  
 	  // docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
       //    dockerImage.push("${env.BUILD_NUMBER}")
