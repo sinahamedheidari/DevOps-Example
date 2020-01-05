@@ -38,9 +38,9 @@ node {
       echo "Docker Image Tag Name: ${dockerImageTag}"
 	  
 	  //sh "docker stop devopsexample"
-    sh "docker stop ${dockerImageTag}"
+    //sh "docker stop ${dockerImageTag}"
 	  
-	  sh "docker rm ${dockerImageTag}"
+	  //sh "docker rm ${dockerImageTag}"
 	  
 	  sh "docker run --name ${dockerImageTag} -d -p 2222:2222 devopsexample:${env.BUILD_NUMBER}"
 	  
