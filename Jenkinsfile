@@ -41,7 +41,7 @@ node {
     //sh "docker stop ${dockerImageTag}"
 	  
 	  //sh "docker rm ${dockerImageTag}"
-      sh "docker stop \$(docker ps |grep devopsexample|awk '{print \$15}') 2>/dev/null"
+      sh "docker stop \$(docker ps |grep devopsexample|awk '{print \$13}') 2>/dev/null"
 	  
 	    sh "docker run --name ${dockerImageTag} -d -p 2222:2222 devopsexample:${env.BUILD_NUMBER}"
 	  
