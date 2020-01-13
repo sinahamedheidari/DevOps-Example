@@ -1,5 +1,5 @@
 # DevOps-Example
-This is a sample Spring Boot Application, used to explain the Jenkins pipeline, in creating a full CI/CD flow using docker too.
+This is a sample Spring Boot Application, used to explain the Jenkins pipeline as well as creating a full CI/CD flow using docker too.
 
 # Jenkins 
 Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process,
